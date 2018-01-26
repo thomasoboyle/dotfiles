@@ -1,0 +1,5 @@
+[user]
+	email = thomas.oboyle@procore.com
+	name = Thomas O'Boyle
+[core]
+	excludesfile = ~/.gitignore
