@@ -6,6 +6,11 @@ else
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+if [ -x "$(command -v zsh )" ]; then
+  echo "Zsh already installed"
+else
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 env RCRC=$HOME/.dotfiles/rcrc rcup
 
 ```
