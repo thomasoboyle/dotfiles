@@ -92,3 +92,5 @@ alias gp_kr="GIT_COMMITTER_NAME=\"Katarina Rossi\" GIT_COMMITTER_EMAIL=\"katarin
 # Update dotfiles
 alias dotup="rcup -x README.md -x up.sh -x Brewfile -x macos.sh -x spectacle.json"
 eval "$(rbenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

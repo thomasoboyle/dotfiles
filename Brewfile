@@ -14,4 +14,6 @@ brew "rbenv"
 brew "redis", restart_service: true
 brew "yarn"
 brew "thoughtbot/formulae/rcm"
+brew "tmux"
+brew "tmate"
 cask "java"
