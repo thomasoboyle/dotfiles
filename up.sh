@@ -18,3 +18,7 @@ env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
 
 brew bundle
+
+# Install vim-plug Plugin Manager
+$  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+

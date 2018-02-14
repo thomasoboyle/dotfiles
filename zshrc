@@ -12,6 +12,12 @@ ZSH_THEME="zhann"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
+#Update Dotfiles
+alias dotup="rcup -x README.md -x tags -x rcrc -x up.sh -x install.sh -x Brewfile -x macos.sh -x spectacle.json -U ctags"
+
+# neovim
+alias vim="nvim"
+
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
