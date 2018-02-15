@@ -58,4 +58,13 @@ set autoindent
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+
+" Cursorline
 set cursorline
+
+
+" Map control p to FZF (search)
+nnoremap <c-p> :FZF<cr>
+
+" Map jk to ESC
+imap jk <Esc>
