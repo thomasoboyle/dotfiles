@@ -16,6 +16,9 @@ Plug 'rakr/vim-one'
 Plug 'tomasiser/vim-code-dark'
 Plug 'morhetz/gruvbox'
 
+" Git Gutter
+Plug 'airblade/vim-gitgutter'
+
 " Nerd Tree
 Plug 'scrooloose/nerdtree'
 call plug#end()
@@ -27,16 +30,6 @@ syntax on
 set t_Co=256
 set background=dark
 colorscheme gruvbox
-
-
-" use 24-bit (true-color) mode in Vim/Neovim
-if (has("nvim"))
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-if (has("termguicolors"))
-  set termguicolors
-end
-
 
 " Number
 set relativenumber
@@ -53,6 +46,11 @@ set ts=2 sw=2 et
 let g:indent_guides_start_level=2
 set autoindent
 
+
+" Git Gutter
+let g:gitgutter_max_signs = 500  " default value
+" Short Delay (To get git gutter to appear more quickly)
+set updatetime=100
 
 " Open NERDTree on start if no files specified
 autocmd StdinReadPre * let s:std_in=1
